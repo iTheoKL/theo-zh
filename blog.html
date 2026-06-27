@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-en-title="Blog — Theo K Laurent" data-zh-title="博客 — 刘允佑">Blog — Theo K Laurent</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            (function () {
+                try {
+                    if (localStorage.getItem("site-lang") === "zh") {
+                        document.documentElement.lang = "zh-CN";
+                    }
+                } catch (e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">TKL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="projects.html" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="blog.html" class="active" data-en="Blog" data-zh="博客">Blog</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <main>
+            <div class="page-header">
+                <div class="section-label" data-en="Writing" data-zh="文章">Writing</div>
+                <h1 data-en="Blog" data-zh="博客">Blog</h1>
+            </div>
+
+            <div class="blog-grid">
+                <a href="archiviette.html" class="blog-card featured">
+                    <div class="blog-meta">
+                        <span class="blog-date">Feb 06, 2026</span>
+                        <span class="blog-category" data-en="Systems" data-zh="系统">Systems</span>
+                    </div>
+                    <h2>Archiviette</h2>
+                    <p
+                        data-en="Building a first project had been on my list for a while. Not for &quot;portfolio building&quot; reasons, but for actually learning how to build something from start to finish. But here's the thing, whenever I think about building something, my brain automatically goes, &quot;Okay, but is this going to be as messy as professional codebases?&quot; Except I've never seen a professional codebase, so I'm just guessing. It's like having an imaginary senior developer living in my head, constantly judging me."
+                        data-zh="做一个属于自己的第一个项目，这件事在我的清单上放了挺久了。倒不是为了「丰富简历」，而是真心想搞清楚一个东西从零到完整到底是怎么做出来的。但有个问题，每次想到要动手做点什么，我脑子里就会自动冒出一句：「行吧，但这会不会跟专业代码库一样乱？」可问题是我压根没见过专业代码库，所以纯粹是瞎猜。就像脑子里住了个虚构的资深开发者，整天在那挑我毛病。"
+                    >
+                        Building a first project had been on my list for a
+                        while. Not for "portfolio building" reasons, but for
+                        actually learning how to build something from start to
+                        finish. But here's the thing, whenever I think about
+                        building something, my brain automatically goes, "Okay,
+                        but is this going to be as messy as professional
+                        codebases?" Except I've never seen a professional
+                        codebase, so I'm just guessing. It's like having an
+                        imaginary senior developer living in my head, constantly
+                        judging me.
+                    </p>
+                    <span class="read-more" data-en="Read more →" data-zh="阅读更多 →">Read more →</span>
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>© 2026 <span data-en="Theo K Laurent" data-zh="刘允佑">Theo K Laurent</span></span>
+            <div class="footer-links">
+                <a href="https://github.com/itheokl" target="_blank">GitHub</a>
+                <a href="mailto:theoklaurent@icloud.com" data-en="Email" data-zh="邮箱">Email</a>
+            </div>
+        </footer>
+
+        <button class="lang-toggle" aria-label="Switch language">
+            <span class="lang-toggle-label">中文</span>
+        </button>
+
+        <script src="nav.js"></script>
+        <script src="lang-toggle.js"></script>
+    </body>
+</html>

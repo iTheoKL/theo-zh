@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-en-title="Theo K Laurent - CS Student" data-zh-title="刘允佑 - 计算机科学学生">Theo K Laurent - CS Student</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            (function () {
+                try {
+                    if (localStorage.getItem("site-lang") === "zh") {
+                        document.documentElement.lang = "zh-CN";
+                    }
+                } catch (e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">TKL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="projects.html" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="blog.html" data-en="Blog" data-zh="博客">Blog</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <div class="hero-inner">
+                    <p class="hero-eyebrow" data-en="CS Student | Aspiring Cloud Sec Architect" data-zh="计算机科学学生 | 立志成为云安全架构师">
+                        CS Student | Aspiring Cloud Sec Architect
+                    </p>
+                    <h1 class="hero-title" data-en="Theo K Laurent" data-zh="刘允佑">Theo K Laurent</h1>
+                    <blockquote
+                        class="hero-quote"
+                        data-en="Là où le temps s'efface,<br />les songes deviennent réels."
+                        data-zh="时光消隐之处，<br />梦境化为真实。"
+                        data-html
+                    >
+                        Là où le temps s'efface,<br />les songes deviennent réels.
+                    </blockquote>
+                    <div class="hero-cta">
+                        <a href="projects.html" class="btn-primary" data-en="View Projects" data-zh="查看项目"
+                            >View Projects</a
+                        >
+                        <a href="about.html" class="btn-ghost" data-en="About Me" data-zh="关于我">About Me</a>
+                    </div>
+                </div>
+                <div class="hero-deco" aria-hidden="true">
+                    <div class="deco-line"></div>
+                    <div class="deco-circle"></div>
+                </div>
+            </section>
+
+            <section class="section-featured">
+                <div class="section-label" data-en="Selected Work" data-zh="精选作品">Selected Work</div>
+                <div class="projects-grid">
+                    <a href="projects.html" class="project-card">
+                        <div class="project-num">01</div>
+                        <div class="project-info">
+                            <h3>Hangman</h3>
+                            <p data-en="A simple terminal based hangman game written in Python." data-zh="一个用 Python 写的简单终端版猎人游戏。">
+                                A simple terminal based hangman game written in Python.
+                            </p>
+                            <span class="tag">Python</span>
+                        </div>
+                        <div class="project-arrow">→</div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section-blog-preview">
+                <div class="section-label" data-en="Recent Writing" data-zh="近期文章">Recent Writing</div>
+                <div class="posts-list">
+                    <a href="blog.html" class="post-row">
+                        <span class="post-date">Feb 06, 2026</span>
+                        <span class="post-title" data-en="Archiviette - A project plan" data-zh="Archiviette —— 一份项目计划"
+                            >Archiviette - A project plan</span
+                        >
+                        <span class="post-arrow">→</span>
+                    </a>
+                </div>
+                <a href="blog.html" class="view-all" data-en="All posts →" data-zh="所有文章 →">All posts →</a>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>© 2026 <span data-en="Theo K Laurent" data-zh="刘允佑">Theo K Laurent</span></span>
+            <div class="footer-links">
+                <a href="https://github.com/itheokl" target="_blank">GitHub</a>
+                <a href="mailto:theoklaurent@icloud.com" data-en="Email" data-zh="邮箱">Email</a>
+            </div>
+        </footer>
+
+        <button class="lang-toggle" aria-label="Switch language">
+            <span class="lang-toggle-label">中文</span>
+        </button>
+
+        <script src="nav.js"></script>
+        <script src="lang-toggle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-en-title="Contact — Theo K Laurent" data-zh-title="联系 — 刘允佑">Contact — Theo K Laurent</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            (function () {
+                try {
+                    if (localStorage.getItem("site-lang") === "zh") {
+                        document.documentElement.lang = "zh-CN";
+                    }
+                } catch (e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">TKL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="projects.html" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="blog.html" data-en="Blog" data-zh="博客">Blog</a></li>
+                <li><a href="contact.html" class="active" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <main>
+            <div class="page-header">
+                <div class="section-label" data-en="Contact" data-zh="联系">Contact</div>
+                <h1 data-en="Get in touch" data-zh="联系我">Get in touch</h1>
+            </div>
+
+            <div class="contact-body">
+                <div class="contact-text">
+                    <p class="large" data-en="Have something worth building? I'd like to hear about it." data-zh="有什么值得动手做的点子吗？我很想听听看。">
+                        Have something worth building? I'd like to hear about
+                        it.
+                    </p>
+                    <p
+                        data-en="Whether it's a project, a question, or just a thought you couldn't shake, feel free to reach out. I read everything, and I reply to most things."
+                        data-zh="不管是一个项目、一个问题，还是一个挥之不去的想法，都欢迎随时联系我。我会看完每一条消息，也会回复大部分。"
+                    >
+                        Whether it's a project, a question, or just a thought
+                        you couldn't shake, feel free to reach out. I read
+                        everything, and I reply to most things.
+                    </p>
+                    <p
+                        data-en="For professional inquiries, email is best. For everything else, GitHub works fine too."
+                        data-zh="正式的事情通过邮箱联系最好，其他的话 GitHub 也完全没问题。"
+                    >
+                        For professional inquiries, email is best. For
+                        everything else, GitHub works fine too.
+                    </p>
+
+                    <div class="contact-links">
+                        <a
+                            href="https://github.com/itheokl"
+                            target="_blank"
+                            class="contact-link-item"
+                        >
+                            <div class="cli-icon">GH</div>
+                            <div class="cli-info">
+                                <strong>GitHub</strong>
+                                <span>github.com/itheokl</span>
+                            </div>
+                            <span class="cli-arrow">↗</span>
+                        </a>
+                        <a
+                            href="mailto:theoklaurent@gmail.com"
+                            class="contact-link-item"
+                        >
+                            <div class="cli-icon">@</div>
+                            <div class="cli-info">
+                                <strong data-en="Email" data-zh="邮箱">Email</strong>
+                                <span>theoklaurent@icloud.com</span>
+                            </div>
+                            <span class="cli-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>© 2026 <span data-en="Theo K Laurent" data-zh="刘允佑">Theo K Laurent</span></span>
+            <div class="footer-links">
+                <a href="https://github.com/itheokl" target="_blank">GitHub</a>
+                <a href="mailto:theoklaurent@icloud.com" data-en="Email" data-zh="邮箱">Email</a>
+            </div>
+        </footer>
+
+        <button class="lang-toggle" aria-label="Switch language">
+            <span class="lang-toggle-label">中文</span>
+        </button>
+
+        <script src="nav.js"></script>
+        <script src="lang-toggle.js"></script>
+    </body>
+</html>

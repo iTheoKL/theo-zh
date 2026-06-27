@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title data-en-title="About — Theo K Laurent" data-zh-title="关于 — 刘允佑">About — Theo K Laurent</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script>
+            (function () {
+                try {
+                    if (localStorage.getItem("site-lang") === "zh") {
+                        document.documentElement.lang = "zh-CN";
+                    }
+                } catch (e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">TKL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="about.html" class="active" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="projects.html" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="blog.html" data-en="Blog" data-zh="博客">Blog</a></li>
+                <li><a href="contact.html" data-en="Contact" data-zh="联系">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <main>
+            <div class="page-header">
+                <div class="section-label" data-en="About" data-zh="关于">About</div>
+                <h1 data-en="A little about me" data-zh="关于我的一些事">A little about me</h1>
+            </div>
+
+            <div class="about-body">
+                <div class="about-text">
+                    <p
+                        data-en="I'm a first-year CS student, currently in the phase where small programs and half-finished games teach you more than any lecture. Hangman one week, a bit of ML the next. The early stuff. It's a lot of not knowing what you're doing and figuring it out anyway, which turns out to be most of what programming is."
+                        data-zh="我是一名计算机科学专业大一学生，现在正处在这样一个阶段：写写小程序、做做半成品小游戏，学到的东西比上课还多。这周写写 Hangman，下周折腾点机器学习。都是些入门的东西。大部分时候是不知道自己在干什么，但还是硬着头皮搞清楚——后来发现，编程本来就是这么回事。"
+                    >
+                        I'm a first-year CS student, currently in the phase where small programs and half-finished games teach you more than any lecture. Hangman one week, a bit of ML the next. The early stuff. It's a lot of not knowing what you're doing and figuring it out anyway, which turns out to be most of what programming is.
+                    </p>
+                    <p
+                        data-en="The goal, though, is clear: Cloud Security Architecture. I got there by laying out the options honestly. Quant Dev, Software Dev, Cloud Sec. All reasonable paths. I went with Cloud Sec because it was the most systems-oriented of the three, and that's the kind of thinking I'm drawn to. It's a long road from here, but having a direction makes the early work feel like it's going somewhere."
+                        data-zh="不过目标是明确的：云安全架构。我是老老实实把几个选项摆出来比较之后才定下来的——量化开发、软件开发、云安全，都是说得过去的路。我选了云安全，因为这三个里它最偏系统层面，而那正是我喜欢思考的方式。从现在到那里还有很长一段路，但有了方向，眼下做的这些基础功夫才感觉不是白费。"
+                    >
+                        The goal, though, is clear: Cloud Security Architecture. I got there by laying out the options honestly. Quant Dev, Software Dev, Cloud Sec. All reasonable paths. I went with Cloud Sec because it was the most systems-oriented of the three, and that's the kind of thinking I'm drawn to. It's a long road from here, but having a direction makes the early work feel like it's going somewhere.
+                    </p>
+                    <p
+                        data-en="Outside the terminal, I play video games (Clair Obscur Expedition 33, and Cyberpunk 2077, they're my favs), I follow Valorant esports more seriously than I probably should. Team Liquid fan. I listen to a lot of music and spend an unreasonable amount of time on YouTube, which at this point I've just accepted as part of who I am. Still figuring most things out. That's the point."
+                        data-zh="不写代码的时候，我会打打游戏（《Clair Obscur：远征33》和《赛博朋克2077》是我最喜欢的两款），也会追 Valorant 电竞比赛，关注程度可能有点超出正常水平，Team Liquid 粉。平时听很多音乐，在 YouTube 上耗的时间长得不太合理，但这点我已经接受了，算是我的一部分。大多数事情还在摸索中。这正是重点所在。"
+                    >
+                        Outside the terminal, I play video games (Clair Obscur Expedition 33, and Cyberpunk 2077, they're my favs), I follow Valorant esports more seriously than I probably should. Team Liquid fan. I listen to a lot of music and spend an unreasonable amount of time on YouTube, which at this point I've just accepted as part of who I am. Still figuring most things out. That's the point.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="skills-block">
+                        <h3 data-en="Technologies" data-zh="技术栈">Technologies</h3>
+                        <ul class="skill-list">
+                            <li>Go</li>
+                            <li>Rust</li>
+                            <li>TypeScript</li>
+                            <li>Python</li>
+                            <li>React</li>
+                            <li>PostgreSQL</li>
+                            <li>Kubernetes</li>
+                            <li>gRPC</li>
+                            <li>Docker</li>
+                            <li>Linux</li>
+                            <li>Redis</li>
+                            <li>Terraform</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="timeline"
+                        style="
+                            margin-top: 2.5rem;
+                            border: 1px solid var(--border);
+                            padding: 2rem;
+                        "
+                    >
+                        <h3 data-en="Timeline" data-zh="时间线">Timeline</h3>
+                        <div class="timeline-item">
+                            <span class="tl-year">2026</span>
+                            <div class="tl-content">
+                                <strong data-en="Second year student" data-zh="大二学生">Second year student</strong>
+                                <span data-en="July 2026" data-zh="2026 年 7 月">July 2026</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="tl-year">2025</span>
+                            <div class="tl-content">
+                                <strong data-en="First year student" data-zh="大一学生">First year student</strong>
+                                <span data-en="August 2025" data-zh="2025 年 8 月">August 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <span>© 2026 <span data-en="Theo K Laurent" data-zh="刘允佑">Theo K Laurent</span></span>
+            <div class="footer-links">
+                <a href="https://github.com/itheokl" target="_blank">GitHub</a>
+                <a href="mailto:theoklaurent@icloud.com" data-en="Email" data-zh="邮箱">Email</a>
+            </div>
+        </footer>
+
+        <button class="lang-toggle" aria-label="Switch language">
+            <span class="lang-toggle-label">中文</span>
+        </button>
+
+        <script src="nav.js"></script>
+        <script src="lang-toggle.js"></script>
+    </body>
+</html>
